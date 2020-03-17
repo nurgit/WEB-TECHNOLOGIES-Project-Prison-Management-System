@@ -1,0 +1,98 @@
+
+
+
+
+#MyInfo{
+  font-size: 15px;
+  padding: 30px;
+  border-bottom:1px solid #21252B;
+  text-align:left;
+  background-color:#ACF2F3;
+
+}
+
+
+
+
+#MyInfo  h2{
+
+  text-align: center;
+}
+
+.AllCell{
+ padding: 30px;
+   border-bottom:1px solid #21252B;
+   background-color:#6AFF75;
+
+
+
+}
+
+.AllCell h2{
+ padding: 5px;
+ text-align: center;
+
+
+}
+
+
+
+.AllCellTable {
+
+}
+.AllCellForm h2{
+text-align: center;
+
+}
+.AllCellTable{
+margin-left: 400px;
+}
+.AllCellTable,th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.AllVisitorTable, th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+.upc{
+
+  text-align: left;
+  padding: 50px;
+  background-color:#E2FA59;
+}
+.upc h2{
+
+  text-align:center;
+
+}
+
+.upct {
+
+  padding: 40px;
+  margin-left: 300px;
+  font-size: 25px;
+
+}
+
+
+.upct tr td{
+
+  font-size: 25px;
+  border: none;
+  border-collapse: none;
+  padding: 0px;
+  text-align: left;
+}
+#pd{
+
+  padding: 10px;
+}
+
+.s{
+
+  margin-left: 20px;
+  padding: 10px;
+}

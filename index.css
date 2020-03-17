@@ -1,0 +1,91 @@
+.loin_content{
+  margin-top: 20px;
+  padding: 20px;
+
+
+}
+#erorline{// USING EROR FONT SIZE & color
+
+  font-size: 20PX;
+  color: red;
+}
+.err_invalid{
+
+
+   margin-left: 120px;
+
+
+
+}
+
+
+.loin_content h1{
+ color: blue;
+ text-align: center;
+ padding: 10px;
+}
+#from{
+
+    padding-left: 380px;
+    padding-bottom: 400px;
+
+}
+#table{
+
+
+}
+#table tr{
+  padding: 10px;
+
+
+
+}
+#table tr td{
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+#np{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  padding: 1px 65px ;
+  background-color: #E8F0FE;
+
+
+}
+
+.usertype{
+  margin-bottom: 10px;
+  font-size: 25px;
+
+}
+#section{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  padding: 1px 110px ;
+  background-color: #E8F0FE;
+
+
+}
+
+
+.login{
+   margin-top: 10px;
+  color: blue;
+  background-color:#F0F0F0;
+
+    font-size: 20px;
+
+     padding: 6px 7px;
+}
+
+.login:hover {
+   margin-top: 10px;
+  color: #F0F0F0;
+  background-color: blue;
+
+font-size: 20px;
+
+padding: 6px 7px;
+}
