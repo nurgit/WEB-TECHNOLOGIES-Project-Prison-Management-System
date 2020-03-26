@@ -1,5 +1,6 @@
 <?php //php for Add Prisoner
 
+
   $visitorName="";
   $err_visitorName="";
 
@@ -46,7 +47,7 @@
       $visitorAddress=($_post['visitorAddress']);
     }
 
-    //
+
 
     if (empty(['visitorPhone'])) {
       $err_visitorPhone="Phone Number Required";
@@ -92,12 +93,12 @@
       $prisonerId=($_post['prisonerId']);
     }
 //-----------------------SESSION Start----
-  /*  if (!$has_error) {
-      section_start();
-      $_SESSION['visitorName']=$visitorName;
+  //  if (!$has_error) {
+  //    section_start();
+    //  $_SESSION['visitorName']=$visitorName;
 
 
-    }*/
+  //  }
 
   }
   ?>
@@ -110,83 +111,14 @@
   <head>
     <meta charset="utf-8">
     <title>Prison Management System</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="VisitorStaff.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/VisitorStaff.css">
   </head>
   <body>
     <div id="wrapper">
-      
-    <!--  <header >
-        <div id="header">
-          <h2>Prison Management System</h2>
-          <h3>Staff Manager : <?php echo $_COOKIE['loggedinuser'];?> </h3>
 
-        </div>
-      </header>
-    -->
-      <nav><!--Start  Manu -->
-        <div id="nav">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#">My Info</a></li>
-            <li><a href="#">All Visitor</a></li>
-            <li><a href="#">Add Visitor</a></li>
-
-            <li><a href="index.php">Log Out</a></li>
-          </ul>
-        </div>
-      </nav>
-
-
-
-
+    <?php include 'VisitorStaff_Header_Manu.php';// add header @ manu ?>
     <div class="content_wrapper">
-
-      <div class="myInfo">
-
-        <h2>My Information</h2>
-
-        <h3>Name : <?php echo $_COOKIE['loggedinuser'];?> </h3>
-        <h3>Id:</h3>
-        <h3>Working Time:</h3>
-
-
-
-      </div>
-
-      <div class="AllVisitor"><!--ALL Visitor-->
-
-          <form class="AllVisitorForm" action="" method="">
-            <h2>All Visitor</h2>
-          <table class="AllVisitorTable">
-            <tr>
-              <th> Name </th>
-              <th>Address</th>
-              <th>Phone No</th>
-              <th>Prisoner Id</th>
-              <th>time</th>
-            </tr>
-            <tr>
-              <td> Akash </td>
-              <td>Kumarkhali </td>
-              <td>1234567891</td>
-              <td>M1</td>
-              <td>1.10.20</td>
-            </tr>
-            <tr>
-              <td> Borsha</td>
-              <td>Rajsahi</td>
-              <td>741789963</td>
-              <td>T1</td>
-              <td>10.10.2019</td>
-            </tr>
-          </table>
-
-          </form>
-
-      </div>
-
-
       <div class="AddVisitor">
 
         <h2 class="AddVisitor_heading">Add  Visitor:</h2>
@@ -283,15 +215,7 @@
 
     </div>
 
-
-
-
-
-      <footer>
-        <div class="footer">
-          <p>&copy; All Right Reserved By-Nur Mogammad</p>
-        </div>
-      </footer>
+      <?php include 'VisitorStaff_footer.php'//add footer  ?>
 
     </div>
 
