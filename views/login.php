@@ -105,8 +105,8 @@
   <head>
     <meta charset="utf-8">
     <title>login</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="views/styles/style.css">
+    <link rel="stylesheet" href="views/styles/Login.css">
   </head>
 
     <body>

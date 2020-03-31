@@ -1,97 +1,119 @@
 <?php //php for Add Prisoner
+require '../contollers/VisitorStaffContoller.php';//for database
+//include '../contollers/VisitorStaffContoller.php';
 
 
-  $visitorName="";
-  $err_visitorName="";
-
-  $visitorAddress="";
-  $err_visitorAddress="";
-
-  $visitorPhone="";
-  $err_visitorPhone="";
-  $visitorGender="";
-  $err_visitorGender="";
-
-  $relation="";
-  $err_relation="";
-
-  $prisonerName="";
-  $err_prisonerName="";
-
-  $prisonerId="";
-  $err_prisonerId="";
 
 
-  	$has_error=false;
+ $visitorName="";
+ $err_visitorName="";
 
-  //
+ $visitorAddress="";
+ $err_visitorAddress="";
 
-  if (isset($_post['submit'])) {
+ $visitorPhone="";
+ $err_visitorPhone="";
+
+ $visitorGender="";
+ $err_visitorGender="";
+
+ $relation="";
+ $err_relation="";
+
+ $prisonerName="";
+ $err_prisonerName="";
+
+ $prisonerId="";
+ $err_prisonerId="";
+
+ $visitorId="";
+ $err_visitorId="";
+
+ 	$has_error=false;
+
+
+  if(isset($_POST['submit'])) {
     // Prisoner Submit start
-    //----visitor Name
-    if (empty(['visitorName'])) {
+
+echo "hello";
+
+    if(empty($_POST['visitorId'])) {
+      echo "working";
+      $err_visitorId="Visitor Id Required";
+      $has_error=true;
+    }
+    else {
+      $visitorId=$_POST['visitorId'];
+      echo "working2";
+    }
+
+    if(empty($_POST['visitorName'])) {
       $err_visitorName="Name Required";
       $has_error=true;
     }
     else {
-      $visitorName=($_post['visitorName']);
+      $visitorName=$_POST['visitorName'];
     }
 //--visitor Address
 
-    if (empty(['visitorAddress'])) {
+    if(empty($_POST['visitorAddress'])) {
       $err_visitorAddress="Address Required";
       $has_error=true;
 
     }
     else {
-      $visitorAddress=($_post['visitorAddress']);
+      $visitorAddress=$_POST['visitorAddress'];
     }
 
 
 
-    if (empty(['visitorPhone'])) {
+    if(empty($_POST['visitorPhone'])) {
       $err_visitorPhone="Phone Number Required";
       $has_error=true;
 
     }
     else {
-      $visitorPhone=($_post['visitorPhone']);
+      $visitorPhone=$_POST['visitorPhone'];
     }
 
 
-    if (empty(['visitorGender'])) {
+    if(empty($_POST['visitorGender'])) {
       $err_visitorGender="Gender Required";
       $has_error=true;
 
     }
     else {
-      $visitorGender=($_post['visitorGender']);
+      $visitorGender=$_POST['visitorGender'];
     }
 
 
-    if (empty(['relation'])) {
+    if(empty($_POST['relation'])) {
       $err_relation="relation Required";
       $has_error=true;
       }
     else {
-      $relation=($_post['relation']);
+      $relation=$_POST['relation'];
     }
 
-    if (empty(['prisonerName'])) {
+    if(empty($_POST['prisonerName'])) {
       $err_prisonerName="prisoner Name Required";
       $has_error=true;
       }
     else {
-      $prisonerName=($_post['prisonerName']);
+      $prisonerName=$_POST['prisonerName'];
     }
 
-    if (empty(['prisonerId'])) {
+    if(empty($_POST['prisonerId'])) {
       $err_prisonerId="prisoner Id Required";
       $has_error=true;
       }
     else {
-      $prisonerId=($_post['prisonerId']);
+      $prisonerId=$_POST['prisonerId'];
+
     }
+
+}
+
 //-----------------------SESSION Start----
   //  if (!$has_error) {
   //    section_start();
@@ -100,7 +122,10 @@
 
   //  }
 
-  }
+
+
+
+
   ?>
 
 
@@ -117,27 +142,43 @@
   <body>
     <div id="wrapper">
 
-    <?php include 'VisitorStaff_Header_Manu.php';// add header @ manu ?>
+    <?php include 'VisitorStaff_Header_Manu.php';// add header & manu ?>
+
     <div class="content_wrapper">
       <div class="AddVisitor">
 
         <h2 class="AddVisitor_heading">Add  Visitor:</h2>
 
-        <form class="AddVisitor_from" action="" method="">
+
+
+
+
+        <!--<form class="AddVisitor_from" action="" method="">-->
+
+          	<form class="AddVisitor_from"   method="post" action=""  >
           <table class="AddVisitortable">
+
+            <tr>
+              <td>Visitor Id:</td>
+              <td>
+                <input type="text" name="visitorId"  id="np" >
+                <br><span><?php echo $err_visitorId; ?></span>
+              </td>
+            </tr>
 
             <tr>
               <td>Visitor Name:</td>
               <td>
-                <input id="np" type="text" name="visitorName" value="<?php  ?>">
+                <input id="np" type="text" name="visitorName" >
                 <br><span><?php echo $err_visitorName; ?></span>
+
               </td>
             </tr>
 
             <tr>
               <td>Visitor Address:</td>
               <td>
-                <input id="np"type="text" name="visitorAddress" value="<?php  ?>">
+                <input id="np"type="text" name="visitorAddress" >
                 <br><span><?php echo $err_visitorAddress; ?></span>
               </td>
             </tr>
@@ -145,7 +186,7 @@
             <tr>
               <td>Visitor Phone No:</td>
               <td>
-                <input  id="np" type="text" name="visitorPhone" value="<?php  ?>" >
+                <input  id="np" type="text" name="visitorPhone" >
                 <br><span> <?php echo $err_visitorPhone; ?></span>
               </td>
             </tr>
@@ -153,7 +194,7 @@
             <tr>
               <td>visitor Gender:</td>
               <td>
-                <input id="np" type="text" name="visitorGender" value="<?php  ?>">
+                <input id="np" type="text" name="visitorGender">
                 <br><span><?php echo $err_visitorGender; ?></span>
               </td>
             </tr>
@@ -162,7 +203,7 @@
             <tr>
               <td>Relation:</td>
               <td>
-                <input id="np" type="text" name="Relation" value="<?php  ?>" >
+                <input id="np" type="text" name="relation" >
                 <br> <span> <?php echo $err_relation; ?>  </span>
               </td>
             </tr>
@@ -170,7 +211,7 @@
             <tr>
             <td>Time:</td>
             <td>
-              <input id="np" type="time" name="" value="<?php  ?>" > <input id="np" type="date" name="" value="">
+              <input id="np" type="time" name="time" > <input id="np" type="date" name="date" value="">
               <br> <span> <?php echo $err_relation; ?>  </span>
             </td>
           </tr>
@@ -185,7 +226,7 @@
             <tr>
               <td>Prisoner Name:</td>
               <td>
-                <input id="np" type="text" name="prisonerName" value="<?php  ?>">
+                <input id="np" type="text" name="prisonerName" >
                 <br><span><?php echo $err_prisonerName; ?></span>
               </td>
             </tr>
@@ -193,7 +234,7 @@
             <tr>
               <td>Prisoner Id:</td>
               <td>
-                <input id="np" type="text" name="prisonerId" value="<?php  ?>">
+                <input id="np" type="text" name="prisonerId" >
                 <br><span><?php echo $err_prisonerId; ?></span>
               </td>
             </tr>
@@ -202,7 +243,7 @@
 
               <td>
                 <td colspan="2" align="center">
-          <input id="np" type="submit" name="submit" value="Submit">
+          <input type="submit" value="Add Visitor" name="submit" id="np">
 
               </td>
             </tr>
@@ -210,7 +251,6 @@
           </table>
 
         </form>
-
       </div>
 
     </div>
