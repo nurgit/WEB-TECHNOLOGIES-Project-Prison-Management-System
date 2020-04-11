@@ -7,7 +7,7 @@ body{
 #wrapper{
     width:1280px;
     margin:5px auto;
-    background-color:F6E8EB;
+    background-color:#F6E8EB;
 
 
 
@@ -36,14 +36,16 @@ body{
 
 }
 #nav ul{
-  background-color: #FFFFFF;
-  list-style-type: none;
-  height: 38px
+   background-color: #FFFFFF;
+   list-style-type: none;
+   height: 38px;
+
 
 }
 #nav ul li{
   float: left;
   border-right: 1px solid #21252B;
+
 }
 #nav ul li:last-child{
   border: none;

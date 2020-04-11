@@ -1,6 +1,6 @@
 <?php
-require '../contollers/VisitorStaffContoller.php';
-include '../contollers/VisitorStaffContoller.php';
+//require '../contollers/VisitorStaffContoller.php';
+//include '../contollers/VisitorStaffContoller.php';
 
 
 
@@ -48,10 +48,10 @@ include '../contollers/VisitorStaffContoller.php';
                 <th>Prisoner Id</th>
 
               </tr>
-
-
               <?php
+              require '../contollers/VisitorStaffContoller.php';
 
+                $visitor=getAllVisitors();
                 foreach ($visitors as $visitor) {
                     echo "<tr>";
 
@@ -64,7 +64,6 @@ include '../contollers/VisitorStaffContoller.php';
                       echo "<td>".$visitor["Time"]."</td>";
                       echo "<td>".$visitor["PrisonerName"]."</td>";
                       echo "<td>".$visitor["PrisonerId"]."</td>";
-
 
 
                     echo "<tr>";

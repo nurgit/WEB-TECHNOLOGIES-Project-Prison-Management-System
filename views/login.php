@@ -57,7 +57,7 @@
 
 				setcookie("loggedinuser",$uname,time()+120);
 
-				header("Location:StaffManager.php");
+				header("Location:views/StaffManager.php");
 			}
 			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="VisitorStaff") {
 				setcookie("loggedinuser",$uname,time()+120);
