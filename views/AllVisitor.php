@@ -29,7 +29,7 @@
     <div id="wrapper">
         <?php include 'VisitorStaff_Header_Manu.php'; //for header & manu ?>
 
-      <div class="content_wrapper">
+      <div id="content_wrapper">
 
         <div class="AllVisitor"><!--ALL Visitor-->
 

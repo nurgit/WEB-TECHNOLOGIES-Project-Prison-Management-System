@@ -144,7 +144,7 @@ echo "hello";
 
     <?php include 'VisitorStaff_Header_Manu.php';// add header & manu ?>
 
-    <div class="content_wrapper">
+    <div id="content_wrapper">
       <div class="AddVisitor">
 
         <h2 class="AddVisitor_heading">Add  Visitor:</h2>
