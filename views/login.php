@@ -69,7 +69,7 @@
 				// workin by oni
 				setcookie("loggedinuser",$uname,time()+120);
 
-				header("Location:CellStaff.php");
+				header("Location:views/CellStaff.php");
 
 			}
 			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="Jailor") {

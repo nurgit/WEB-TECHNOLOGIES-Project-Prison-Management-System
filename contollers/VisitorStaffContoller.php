@@ -14,7 +14,23 @@ function getAllVisitors()
 
 	if(isset($_POST["submit"]))
 	{
-		insertVisitor();
+		$name=$_POST["name"];
+		$cid=$_POST["c_id"];
+		$price=$_POST["unit_price"];
+		$qty=$_POST["unit_qty"];
+		$desc=$_POST["description"];
+		 //file upload
+        $target_dir="../storage/product_image/";
+        $target_file = $target_dir . basename($_FILES["image"]["name"]);
+        $uploadOk = 1;
+        $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+        move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
+		//echo $target_file;
+		$query="INSERT INTO products VALUES(NULL,'$name',$cid,$price,$qty,'$desc','$target_file')";
+		execute($query);
+		header("Location:../views/allproducts.php");
+
+
 	}
 
 
