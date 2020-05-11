@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Prison Management System</title>
-    <link rel="stylesheet" href="styles/cellStaff.css">
+    <!--<link rel="stylesheet" href="styles/cellStaff.css">-->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/StaffManager.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
   </head>
 
   <body>
@@ -24,7 +26,7 @@
             <li><a href="http://localhost/bdprison.org/views/CellStaff.php">Home</a></li>
             <li><a href="#">My Info</a></li>
             <li><a href="http://localhost/bdprison.org/views/CellStaff_AllScell.php">All Cell</a></li>
-            <li><a href="http://localhost/bdprison.org/views/CellStaff_Update_Prisoner.php">Update Cell</a></li>
+            <li><a href="http://localhost/bdprison.org/views/CellStaff_Update_Cell_All.php">Update Cell</a></li>
             <li><a href="http://localhost/bdprison.org">Log Out</a></li>
           </ul>
         </div>

@@ -1,37 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Jailor </title>
 
-    <link rel="stylesheet" href="jailor.css">
+<?php include 'jailor_Header_Manu.php' ?>
 
-  </head>
-  <body>
 
-   <div id="wrapper">
-      <header >
-        <div id="header">
-          <h2>Prison Management System</h2>
-          <h3>Jailor</h3>
-
-        </div>
-      </header>
-
-      <nav><!--Start  Manu -->
-        <div id="nav">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#">My Info</a></li>
-            <li><a href="#">Cell Staff </a></li>
-            <li><a href="#">Prisoner Staff</a></li>
-            <li><a href="#">Visitor Staff</a></li>
-            <li><a href="#">Staff Manager</a></li>
-
-            <li><a href="http://localhost/bdprison.org">Log Out</a></li>
-          </ul>
-        </div>
-      </nav>
 
 
 <div class="background">
@@ -157,13 +127,5 @@
 
 
 
-      <footer>
-        <div class="footer">
-          <p>&copy; All Right Reserved By-piash</p>
-        </div>
-      </footer>
 
-    </div>
-
-  </body>
-</html>
+<?php include 'jailor_footer.php' ?>

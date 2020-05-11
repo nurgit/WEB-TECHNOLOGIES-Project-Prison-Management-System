@@ -76,14 +76,14 @@
 				// working By piash...
 				setcookie("loggedinuser",$uname,time()+120);
 
-				header("Location:Jailor.php");
+				header("Location:views/Jailor.php");
 
 			}
 			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="prisonerStaff") {
 				// working By piash...
 				setcookie("loggedinuser",$uname,time()+120);
 
-				header("Location:prisonerStaff.php");
+				header("Location:views/PrisonerStaff.php");
 
 			}
 			else

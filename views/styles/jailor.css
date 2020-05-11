@@ -130,7 +130,7 @@ overflow: hidden;
   padding: 5px;
 }
 .AllVisitorTable, th, td {
-  border: 1px solid white;
+  border: 2px solid white;
   border-collapse: collapse;
   color: white;
 }
@@ -141,6 +141,7 @@ overflow: hidden;
 
 .AllVisitorTable th {
   background-color: black;
+
   color: white;
 
 }

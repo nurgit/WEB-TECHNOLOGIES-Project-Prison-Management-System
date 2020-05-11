@@ -86,7 +86,8 @@ echo $staff["id"];
 
        </div>
    	<td>
-   		<form id="updateFrom"method="post" action="../contollers\StaffManagerContoller.php" enctype="multipart/form-data" class="form-horizontal form-material">
+
+   		<form id="updateFrom"method="post"  enctype="multipart/form-data" class="form-horizontal form-material">
 
 
    			<div class="form-group">

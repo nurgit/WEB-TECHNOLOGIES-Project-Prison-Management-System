@@ -1,42 +1,41 @@
 
-<?php
- include "CellStaff_Header_Manu.php"
-
- ?>
-
-
-
-<div class="AllCell"> <!--ALL Visitor-->
+<?php include "CellStaff_Header_Manu.php"?>
 
     <form class="AllCellForm" action="" method="">
-      <h2>All Scell</h2>
-    <table class="AllCellTable">
-      <tr>
-        <th> Cell Id </th>
-        <th>Guilt Cell</th>
+      <h2 class="mx-auto mt-3" style="width:200px"> All Scell </h2>
 
-        <th>All Prisoner</th>
-        <th>Prisoner Limit</th>
-      </tr>
-      <tr>
+    <div class="table table-bordered" class="table-responsive-xl">
+    <?php // i can't find  ?>
+      <table class="table">
+         <thead class="thead-light">
+        <tr>
+          <th scope="col" >Cell Id</th>
+          <th scope="col">Guilt Cell</th>
+          <th >Prisoner Limit</th>
+          <th>All Prisoner</th>
+          <th>All Prisoner Id</th>
+        </tr>
+         </thead>
 
-        <td> 1001 </td>
-        <td>Murderer </td>
-        <td>3</td>
-        <td>5</td>
 
-      </tr>
-      <tr>
-        <td> 1006</td>
-        <td>Thieve</td>
-        <td>5</td>
-        <td>5</td>
+        <?php
+        require_once '../contollers/CellStaffContoller.php';
 
-      </tr>
-    </table>
+        $AllCell=getAllCell();
+          foreach ($AllCell as $cell) {
+              echo "<tr>";
 
-    </form>
+                echo "<td>".$cell["cellId"]."</td>";
+                echo "<td>".$cell["guiltCell"]."</td>";
+                echo "<td>".$cell["prisonerLimit"]."</td>";
+                echo "<td>".$cell["allPrisoner"]."</td>";
+                echo "<td>".$cell["allPrisonerId"]."</td>";
+              echo "<tr>";
+          }
 
-</div>
+         ?>
 
-  <?php  include "CellStaffFooter.php";?>
+      </table>
+    </div>
+</form>
+<?php  include "CellStaffFooter.php";?>

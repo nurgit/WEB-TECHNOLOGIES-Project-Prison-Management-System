@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jailor </title>
+
+    <link rel="stylesheet" href="styles/jailor.css">
+
+  </head>
+  <body>
+
+   <div id="wrapper">
+      <header >
+        <div id="header">
+          <h2>Prison Management System</h2>
+          <h3>Jailor</h3>
+
+        </div>
+      </header>
+
+      <nav><!--Start  Manu -->
+        <div id="nav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#">My Info</a></li>
+            <li><a href="jailor_All_Staff.php">All Staff </a></li>
+            <li><a href="#">Prisoner Staff</a></li>
+            <li><a href="#">Visitor Staff</a></li>
+            <li><a href="#">Staff Manager</a></li>
+
+            <li><a href="http://localhost/bdprison.org">Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
