@@ -1,53 +1,55 @@
+#wrapperprisonerStaff
+{
+ background-image: url("prisoner.jpg");
+
+}
+
 *{margin: 0; padding: 0;}
 body{
 
   background-color:#FFFFFF;
 }
 
-#wrapper{
+#wrapperprisonerStaff{
     width:1280px;
     margin:5px auto;
-    background-color: aliceblue;
+    background-color:F6E8EB;
 
 
 
 }
 
 #header{
-  background-color:#75B325 ;
+
   padding: 15px;
-  border-bottom:5px solid #21252B;
+
 
 }
+
 #header h2{
   color:#FEFEFE;
   font-family:georgia;
 }
-#header P{
-  padding: 5px;
-  color: #282C34;
+#header h3{
+  color:white;
   font-family:georgia;
-
 }
-#nav{
-  background-color: #FFFFFF;
 
-  border-bottom:5px solid #21252B;
-//  padding-bottom: 10px;
+#nav{
+
+
 
 
 }
 #nav ul{
-   background-color: #FFFFFF;
-   list-style-type: none;
-   height: 38px;
-
+  background-color: #FFFFFF;
+  list-style-type: none;
+  height: 38px
 
 }
 #nav ul li{
   float: left;
   border-right: 1px solid #21252B;
-
 }
 #nav ul li:last-child{
   border: none;
@@ -59,32 +61,37 @@ body{
   display: block;
   padding: 10px 20px;
   font-family:arial;
-
+  fo
 }
 #nav Ul li a:hover{
   color: #F0F0F0;
   background-color:  #75B325;
 
 }
-#slider img {//usibg adms projec
+#slider img {
  width: 1280;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  vertical-align: middle;/*img ar nesa faka jaiga remove korar jonno*/
+  vertical-align: middle;/*img ar necha faka jaiga remove korar jonno*/
 
 
 }
 
-
+.backgroundprisonerStaff{
+  background-image: url("prisoner.jpg");
+  height: 1000px;
+  width:1000;
+  display: block;
+}
 .content_wrapper{
   border-top: 5px solid #21252B;
 background-color: #F0F0F0;
 padding: 20px;
 display: block;
-//overflow: hidden;
+overflow: hidden;
 
 }
 .left_content_1{

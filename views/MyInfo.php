@@ -11,7 +11,7 @@
 
       <?php include 'VisitorStaff_Header_Manu.php'; //for header & manu ?>
 
-      <div class="content_wrapper">
+      <div id="content_wrapper">
       <div class="myInfo">
         <h2>My Information</h2>
         <h3>Name : <?php echo $_COOKIE['loggedinuser'];?> </h3>

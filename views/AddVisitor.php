@@ -35,16 +35,16 @@ require '../contollers/VisitorStaffContoller.php';//for database
   if(isset($_POST['submit'])) {
     // Prisoner Submit start
 
-echo "hello";
+
 
     if(empty($_POST['visitorId'])) {
-      echo "working";
+
       $err_visitorId="Visitor Id Required";
       $has_error=true;
     }
     else {
       $visitorId=$_POST['visitorId'];
-      echo "working2";
+
     }
 
     if(empty($_POST['visitorName'])) {
@@ -144,7 +144,7 @@ echo "hello";
 
     <?php include 'VisitorStaff_Header_Manu.php';// add header & manu ?>
 
-    <div class="content_wrapper">
+    <div id="content_wrapper">
       <div class="AddVisitor">
 
         <h2 class="AddVisitor_heading">Add  Visitor:</h2>
@@ -155,7 +155,7 @@ echo "hello";
 
         <!--<form class="AddVisitor_from" action="" method="">-->
 
-          	<form class="AddVisitor_from"   method="post" action=""  >
+          	<form class="AddVisitor_from"   method="post" action="../contollers/VisitorStaffContoller.php"  >
           <table class="AddVisitortable">
 
             <tr>

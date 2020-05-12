@@ -57,7 +57,7 @@
 
 				setcookie("loggedinuser",$uname,time()+120);
 
-				header("Location:StaffManager.php");
+				header("Location:views/StaffManager.php");
 			}
 			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="VisitorStaff") {
 				setcookie("loggedinuser",$uname,time()+120);
@@ -69,21 +69,21 @@
 				// workin by oni
 				setcookie("loggedinuser",$uname,time()+120);
 
-				header("Location:CellStaff.php");
+				header("Location:views/CellStaff.php");
 
 			}
 			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="Jailor") {
 				// working By piash...
 				setcookie("loggedinuser",$uname,time()+120);
 
-				header("Location:Jailor.php");
+				header("Location:views/Jailor.php");
 
 			}
 			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="prisonerStaff") {
 				// working By piash...
 				setcookie("loggedinuser",$uname,time()+120);
 
-				header("Location:prisonerStaff.php");
+				header("Location:views/PrisonerStaff.php");
 
 			}
 			else
