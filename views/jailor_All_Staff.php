@@ -1,13 +1,13 @@
 <body>
   <?php include 'jailor_Header_Manu.php';
   ?>
-  <div>
-    <h1>gv</h1>
-
-  </div>
-
   <div class="table table-bordered" class="table-responsive-xl">
+    <div class="" style="color:white">
+        <h2 class="mx-auto mt-3" style="width:200px"> All Staff </h2>
+
+    </div>
     <table class="table">
+
        <thead class="thead-light">
       <tr>
         <th scope="col" >Id</th>

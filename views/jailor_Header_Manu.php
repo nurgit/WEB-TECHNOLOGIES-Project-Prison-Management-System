@@ -5,6 +5,7 @@
     <title>Jailor </title>
 
     <link rel="stylesheet" href="styles/jailor.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
 
   </head>
   <body>
@@ -24,7 +25,7 @@
             <li><a href="">Home</a></li>
             <li><a href="#">My Info</a></li>
             <li><a href="jailor_All_Staff.php">All Staff </a></li>
-            <li><a href="#">Prisoner Staff</a></li>
+            <li><a href="jailor_All_Cell.php">All Cell</a></li>
             <li><a href="#">Visitor Staff</a></li>
             <li><a href="#">Staff Manager</a></li>
 
