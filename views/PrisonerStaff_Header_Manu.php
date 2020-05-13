@@ -27,7 +27,7 @@
             <li><a href="">Home</a></li>
             <li><a href="#">My Info</a></li>
             <li><a href="#">All Prisoner </a></li>
-            <li><a href="#">Add Prisoner</a></li>
+            <li><a href="PrisonerStaff_Add_Prisoner.php">Add Prisoner</a></li>
             <li><a href="#">Remove Prisoner</a></li>
             <li><a href="http://localhost/bdprison.org">Log Out</a></li>
           </ul>

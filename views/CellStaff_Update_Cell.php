@@ -49,7 +49,7 @@ $cell=getCell($cId);
    </div>
    <div class="form-row">
      <div class="col-md-6 mb-3">
-       <label for="validationCustom03">Add "," than  Add New Prisoner ID</label>
+       <label for="validationCustom03">Add "," then  Add New Prisoner ID</label>
        <input type="text" class="form-control" id="validationCustom03" value="<?php echo $cell["allPrisonerId"] ?>" name="allPrisonerId" required>
        <div class="invalid-feedback">
          Please provide a valid ID .
@@ -57,10 +57,10 @@ $cell=getCell($cId);
      </div>
 
      <div class="col-md-3 mb-3">
-       <label for="validationCustom05">	Tutal Prisoner</label>
+       <label for="validationCustom05">	Total Prisoner</label>
        <input type="text" class="form-control" id="validationCustom05"  value="<?php echo $cell["allPrisoner"] ?>" name="allPrisoner" required>
        <div class="invalid-feedback" >
-         Please Add Tutal Prisoner.
+         Please Add Total Prisoner.
        </div>
      </div>
    </div>

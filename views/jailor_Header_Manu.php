@@ -22,12 +22,11 @@
       <nav><!--Start  Manu -->
         <div id="nav">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#">My Info</a></li>
+            <li><a href="http://localhost/bdprison.org/views/Jailor.php">Home</a></li>
             <li><a href="jailor_All_Staff.php">All Staff </a></li>
             <li><a href="jailor_All_Cell.php">All Cell</a></li>
-            <li><a href="#">Visitor Staff</a></li>
-            <li><a href="#">Staff Manager</a></li>
+            <li><a href="#">All Visitor</a></li>
+            <li><a href="jailor_Add_Staff.php">Add Staff</a></li>
 
             <li><a href="http://localhost/bdprison.org">Log Out</a></li>
           </ul>

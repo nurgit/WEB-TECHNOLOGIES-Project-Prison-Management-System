@@ -2,7 +2,7 @@
 <?php include "CellStaff_Header_Manu.php"?>
 
     <form class="AllCellForm" action="" method="">
-      <h2 class="mx-auto mt-3" style="width:200px"> All Scell </h2>
+      <h2 class="mx-auto mt-3" style="width:200px"> All Cell </h2>
 
     <div class="table table-bordered" class="table-responsive-xl">
     <?php // i can't find  ?>
