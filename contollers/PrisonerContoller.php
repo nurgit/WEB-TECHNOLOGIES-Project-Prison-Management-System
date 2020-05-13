@@ -45,6 +45,16 @@ function insertPrisoner()
       }
 
 
+			function getAllPrisoner(){
+				$query ="SELECT * FROM allprisoner";
+			  $AllPrisoner = get($query);
+			  return $AllPrisoner;
+
+
+
+			}
+
+
 
 
 

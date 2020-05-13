@@ -24,9 +24,9 @@
       <nav><!--Start  Manu -->
         <div id="nav">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#">My Info</a></li>
-            <li><a href="#">All Prisoner </a></li>
+            <li><a href="http://localhost/bdprison.org/views/PrisonerStaff.php">Home</a></li>
+            
+            <li><a href="PrisonerStaff_All_Prisoner.php">All Prisoner </a></li>
             <li><a href="PrisonerStaff_Add_Prisoner.php">Add Prisoner</a></li>
             <li><a href="#">Remove Prisoner</a></li>
             <li><a href="http://localhost/bdprison.org">Log Out</a></li>

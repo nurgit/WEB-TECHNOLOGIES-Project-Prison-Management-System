@@ -1,5 +1,5 @@
 <?php include 'PrisonerStaff_Header_Manu.php'; ?>
-<?php include '../contollers/PrinonerContoller.php'; ?>
+<?php include '../contollers/PrisonerContoller.php'; ?>
 
 
 
@@ -130,7 +130,7 @@
       </div>
     </div>
   </div>
-  <button class="btn btn-primary" type="submit" name="add_Prisoner">Add Prisoner"</button>
+  <button class="btn btn-primary mb-3" type="submit" name="add_Prisoner">Add Prisoner"</button>
 </form>
 
 
@@ -157,3 +157,6 @@
   }, false);
 })();
 </script>
+
+
+<?php include 'PrisonerStaff_Footer.php'; ?>
