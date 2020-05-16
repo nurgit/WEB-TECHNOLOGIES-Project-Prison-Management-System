@@ -9,7 +9,3 @@
 
 
 <?php include 'StaffManager_Footer.php'  ?>
-
-
-  </body>
-</html>

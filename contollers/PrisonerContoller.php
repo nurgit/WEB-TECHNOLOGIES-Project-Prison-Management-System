@@ -41,7 +41,7 @@ function insertPrisoner()
 
         $query="INSERT INTO allprisoner VALUES('$id','$name','$gender','$target_file','$phoneNumber','$address','$occupation','$crime','$day','$startDate','$endDate','$notes')";
         execute($query);
-        header("Location:../views/Prisoner.php");
+        header("Location:../views/PrisonerStaff.php");
       }
 
 

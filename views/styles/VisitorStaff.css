@@ -1,4 +1,6 @@
 
+
+
 .myInfo{
   font-size: 15px;
   padding: 30px;
@@ -109,7 +111,7 @@
 }
 
 #content_wrapper{
-  border-top: 5px solid #21252B;
+  border-top: 0px solid #21252B;
 background-color: #F0F0F0;
 padding: 20px;
 display: block;
@@ -128,7 +130,7 @@ display: block;
 .nav ul{
    background-color: #FFFFFF;
    list-style-type: none;
-   height: 38px;
+   height: 28px;
 
 
 }
