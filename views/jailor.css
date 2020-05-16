@@ -1,0 +1,211 @@
+#wrapper
+{
+
+ background-image: url("prison.jpg");
+
+}
+
+*{margin: 0; padding: 0;}
+body{
+
+  background-color:#FFFFFF;
+}
+
+#wrapper{
+    width:1280px;
+    margin:5px auto;
+
+
+
+
+}
+
+#header{
+
+  padding: 15px;
+
+
+}
+
+#header h2{
+  color:#FEFEFE;
+  font-family:georgia;
+}
+#header h3{
+  color:white;
+  font-family:georgia;
+}
+
+#nav{
+
+
+
+
+}
+#nav ul{
+  background-color: #FFFFFF;
+  list-style-type: none;
+  height: 38px
+
+}
+#nav ul li{
+  float: left;
+  border-right: 1px solid #21252B;
+}
+#nav ul li:last-child{
+  border: none;
+}
+#nav ul li a{
+  color: #75B325;
+  text-decoration:none ;
+
+  display: block;
+  padding: 10px 20px;
+  font-family:arial;
+  fo
+}
+#nav Ul li a:hover{
+  color: #F0F0F0;
+  background-color:  #75B325;
+
+}
+#slider img {
+ width: 1280;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: middle;/*img ar nesa faka jaiga remove korar jonno*/
+
+
+}
+.background{
+  height: auto;
+  width: auto;
+}
+.content_wrapper{
+  border-top: 5px solid #21252B;
+background-color: #F0F0F0;
+padding: 20px;
+display: block;
+overflow: hidden;
+
+
+}
+
+
+.myInfo{
+  font-size: 15px;
+  padding: 30px;
+  border-bottom:1px solid white;
+  text-align:left;
+  background-color:none;
+  color:white;
+
+
+}
+
+.myInfo  h2{
+  padding-top: 5px;
+
+  text-align: center;
+  background-color: blue;
+}
+.myInfo  h3{
+
+
+}
+.AllVisitor h2{
+ padding: 5px;
+ text-align: center;
+ color: white;
+ background-color: blue;
+
+
+}
+
+.AllVisitorTable {
+  width:100%;
+  padding: 5px;
+}
+.AllVisitorTable, th, td {
+  border: 2px solid white;
+  border-collapse: collapse;
+  color: white;
+}
+.AllVisitorTable, th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+.AllVisitorTable th {
+  background-color: black;
+
+  color: white;
+
+}
+
+
+.AllCell{
+ padding: 30px;
+   border-bottom:1px solid #21252B;
+
+
+
+
+}
+
+.AllCell h2{
+ padding: 5px;
+ text-align: center;
+    background-color:blue;
+
+
+}
+
+
+
+.AllCellTable {
+
+}
+.AllCellForm h2{
+text-align: center;
+
+}
+.AllCellTable{
+margin-left: 400px;
+}
+.AllCellTable,th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.AllVisitorTable, th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+.AllStaff h2{
+
+  padding: 5px;
+  text-align: center;
+     background-color:blue;
+
+
+}
+
+
+
+
+
+.footer{
+
+  background-color: #282C34;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p{
+  color: #FFFFFF;
+}
