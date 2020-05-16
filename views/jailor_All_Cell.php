@@ -1,5 +1,6 @@
 <body>
   <?php include 'jailor_Header_Manu.php';?>
+
   <form class="AllCellForm" action="" method="">
 
     <div class="" style="color:white">
