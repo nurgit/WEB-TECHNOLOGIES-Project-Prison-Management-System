@@ -25,8 +25,8 @@
             <li><a href="http://localhost/bdprison.org/views/Jailor.php">Home</a></li>
             <li><a href="jailor_All_Staff.php">All Staff </a></li>
             <li><a href="jailor_All_Cell.php">All Cell</a></li>
-            <li><a href="#">All Visitor</a></li>
-          
+            <li><a href="jailor_All_Visitor.php">All Visitor</a></li>
+
 
             <li><a href="http://localhost/bdprison.org">Log Out</a></li>
           </ul>
