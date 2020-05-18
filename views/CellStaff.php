@@ -4,13 +4,12 @@
 
           <div id="content_wrapper">
 
-            <div id="MyInfo">
+            <div class="myInfo">
 
-              <h2>My Information</h2>
+              <h2 class="row justify-content-center" >My Information</h2>
 
-              <h3>Name : <?php echo $_COOKIE['loggedinuser'];?> </h3>
-              <h3>Id:</h3>
-              <h3>Working Time:</h3>
+              <h3>User Type  : Cell Staff</h3>
+              <h3>User Name : <?php echo $_COOKIE['loggedinuser'];?> </h3>
 
 
             </div>

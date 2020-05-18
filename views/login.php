@@ -52,36 +52,36 @@
 
 		if(!$has_error)
 		{
-			if($uname=="abcd" && $pass=="1234" && $user_type=="StaffManager")
+			if($uname=="abcs" && $pass=="1234" && $user_type=="StaffManager")
 			{
 
-				setcookie("loggedinuser",$uname,time()+120);
+				setcookie("loggedinuser",$uname,time()+180);
 
 				header("Location:views/StaffManager.php");
 			}
-			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="VisitorStaff") {
-				setcookie("loggedinuser",$uname,time()+120);
+			elseif ($uname=="abcv" && $pass=="1234" && $user_type=="VisitorStaff") {
+				setcookie("loggedinuser",$uname,time()+180);
 
 				header("Location: views/VisitorStaff.php");
 
 			}
-			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="CellStaff") {
+			elseif ($uname=="abcc" && $pass=="1234" && $user_type=="CellStaff") {
 				// workin by oni
-				setcookie("loggedinuser",$uname,time()+120);
+				setcookie("loggedinuser",$uname,time()+180);
 
 				header("Location:views/CellStaff.php");
 
 			}
-			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="Jailor") {
+			elseif ($uname=="abcj" && $pass=="1234" && $user_type=="Jailor") {
 				// working By piash...
-				setcookie("loggedinuser",$uname,time()+120);
+				setcookie("loggedinuser",$uname,time()+180);
 
 				header("Location:views/Jailor.php");
 
 			}
-			elseif ($uname=="abcd" && $pass=="1234" && $user_type=="prisonerStaff") {
+			elseif ($uname=="abcp" && $pass=="1234" && $user_type=="prisonerStaff") {
 				// working By piash...
-				setcookie("loggedinuser",$uname,time()+120);
+				setcookie("loggedinuser",$uname,time()+180);
 
 				header("Location:views/PrisonerStaff.php");
 
@@ -137,10 +137,12 @@
            <select id="section" name="user_type">
 
               <option value="Jailor"  >Jailor</option>  <!--pIASH-->
+							<option value="prisonerStaff">Prisoner Staff</option> <!--pIASH-->
+							  <option value="CellStaff">Cell Staff</option> <!--Oni-->
               <option value="StaffManager" >Staff Manager</option> <!--Nur-->
               <option value="VisitorStaff">Visitor Staff</option> <!--Nur-->
-              <option value="CellStaff">Cell Staff</option> <!--Oni-->
-							  <option value="prisonerStaff">Prisoner Staff</option> <!--pIASH-->
+
+
 
           </select>
 

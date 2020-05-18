@@ -24,7 +24,7 @@
         <div id="nav">
           <ul>
             <li><a href="http://localhost/bdprison.org/views/CellStaff.php">Home</a></li>
-            <li><a href="#">My Info</a></li>
+            
             <li><a href="http://localhost/bdprison.org/views/CellStaff_AllScell.php">All Cell</a></li>
             <li><a href="http://localhost/bdprison.org/views/CellStaff_Update_Cell_All.php">Update Cell</a></li>
             <li><a href="http://localhost/bdprison.org">Log Out</a></li>
